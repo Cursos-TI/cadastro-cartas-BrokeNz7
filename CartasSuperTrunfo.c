@@ -1,3 +1,20 @@
+//#include <stdio.h>
+
+// Desafio Super Trunfo - Países
+// Tema 1 - Cadastro das cartas
+// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+
+//int main() {
+  // Área para definição das variáveis para armazenar as propriedades das cidades
+
+  // Área para entrada de dados
+
+  // Área para exibição dos dados da cidade
+
+//return 0;
+//} 
+
+
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
@@ -6,10 +23,61 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
+  char codigo1[4], nome1[50];
+  long int populacao1, pib1;
+  float area1;
+  int pontos1;
+
+  char codigo2[4], nome2[50];
+  long int populacao2, pib2;
+  float area2;
+  int pontos2;
 
   // Área para entrada de dados
+  printf("=== CADASTRO DA PRIMEIRA CARTA ===\n");
+  printf("Codigo da carta (ex: A01): ");
+  scanf("%s", codigo1);
+  printf("Nome da cidade: ");
+  scanf(" %[^\n]", nome1);
+  printf("Populacao: ");
+  scanf("%ld", &populacao1);
+  printf("Area (km²): ");
+  scanf("%f", &area1);
+  printf("PIB: ");
+  scanf("%ld", &pib1);
+  printf("Pontos turisticos: ");
+  scanf("%d", &pontos1);
+
+  printf("\n=== CADASTRO DA SEGUNDA CARTA ===\n");
+  printf("Codigo da carta (ex: B01): ");
+  scanf("%s", codigo2);
+  printf("Nome da cidade: ");
+  scanf(" %[^\n]", nome2);
+  printf("Populacao: ");
+  scanf("%ld", &populacao2);
+  printf("Area (km²): ");
+  scanf("%f", &area2);
+  printf("PIB: ");
+  scanf("%ld", &pib2);
+  printf("Pontos turisticos: ");
+  scanf("%d", &pontos2);
 
   // Área para exibição dos dados da cidade
+  printf("\n=== CARTAS CADASTRADAS ===\n");
 
-return 0;
-} 
+  printf("\nCarta 1: %s\n", codigo1);
+  printf("Cidade: %s\n", nome1);
+  printf("Populacao: %ld habitantes\n", populacao1);
+  printf("Area: %.2f km²\n", area1);
+  printf("PIB: R$ %ld\n", pib1);
+  printf("Pontos turisticos: %d\n", pontos1);
+
+  printf("\nCarta 2: %s\n", codigo2);
+  printf("Cidade: %s\n", nome2);
+  printf("Populacao: %ld habitantes\n", populacao2);
+  printf("Area: %.2f km²\n", area2);
+  printf("PIB: R$ %ld\n", pib2);
+  printf("Pontos turisticos: %d\n", pontos2);
+
+  return 0;
+}
