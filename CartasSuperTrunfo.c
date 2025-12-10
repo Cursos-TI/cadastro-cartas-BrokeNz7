@@ -86,5 +86,53 @@ int main() {
   printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
   printf("PIB per capita: R$ %.2f\n", pib_per_capita2);
 
+  // =============================================
+  // NÍVEL MESTRE – COMPARAÇÃO DE CARTAS
+  // =============================================
+
+  int vitorias1 = 0, vitorias2 = 0;
+
+  printf("\n=== COMPARAÇÃO DAS CARTAS (NÍVEL MESTRE) ===\n");
+
+  // População
+  if (populacao1 > populacao2) { printf("População: Carta 1 vence\n"); vitorias1++; }
+  else if (populacao2 > populacao1) { printf("População: Carta 2 vence\n"); vitorias2++; }
+  else printf("População: Empate\n");
+
+  // Área
+  if (area1 > area2) { printf("Área: Carta 1 vence\n"); vitorias1++; }
+  else if (area2 > area1) { printf("Área: Carta 2 vence\n"); vitorias2++; }
+  else printf("Área: Empate\n");
+
+  // PIB
+  if (pib1 > pib2) { printf("PIB: Carta 1 vence\n"); vitorias1++; }
+  else if (pib2 > pib1) { printf("PIB: Carta 2 vence\n"); vitorias2++; }
+  else printf("PIB: Empate\n");
+
+  // Pontos turísticos
+  if (pontos1 > pontos2) { printf("Pontos turísticos: Carta 1 vence\n"); vitorias1++; }
+  else if (pontos2 > pontos1) { printf("Pontos turísticos: Carta 2 vence\n"); vitorias2++; }
+  else printf("Pontos turísticos: Empate\n");
+
+  // Densidade (MENOR vence)
+  if (densidade1 < densidade2) { printf("Densidade: Carta 1 vence (menor densidade)\n"); vitorias1++; }
+  else if (densidade2 < densidade1) { printf("Densidade: Carta 2 vence (menor densidade)\n"); vitorias2++; }
+  else printf("Densidade: Empate\n");
+
+  // Super Poder (soma de tudo)
+  long int super1 = populacao1 + area1 + pib1 + pontos1;
+  long int super2 = populacao2 + area2 + pib2 + pontos2;
+
+  printf("\nSuper Poder Carta 1: %ld\n", super1);
+  printf("Super Poder Carta 2: %ld\n", super2);
+
+  // Resultado final
+  printf("\n=== RESULTADO FINAL ===\n");
+  if (vitorias1 > vitorias2) printf("CARTA 1 (%s) VENCEU O JOGO! (%d x %d)\n", nome1, vitorias1, vitorias2);
+  else if (vitorias2 > vitorias1) printf("CARTA 2 (%s) VENCEU O JOGO! (%d x %d)\n", nome2, vitorias2, vitorias1);
+  else printf("EMPATE TÉCNICO! (%d x %d)\n", vitorias1, vitorias2);
+
   return 0;
+
+
 }
