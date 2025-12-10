@@ -2,9 +2,12 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando os países utilizando scanf para entrada de dados e printf para exibir as informações.
+// Aluno: Vinícius Silva (BrokeNz7)
 
+  // =============================================
+  // NÍVEL NOVATO – CADASTRO DAS CARTAS
+  // =============================================
+  
 int main() {
   // Área para definição das variáveis para armazenar as propriedades dos países
   char codigo1[4], nome1[50];
@@ -62,6 +65,26 @@ int main() {
   printf("Area: %.2f km²\n", area2);
   printf("PIB: R$ %ld\n", pib2);
   printf("Pontos turisticos: %d\n", pontos2);
+
+  // =============================================
+  // NÍVEL AVENTUREIRO – CÁLCULOS AUTOMÁTICOS
+  // =============================================
+
+  float densidade1 = (float)populacao1 / area1;
+  float pib_per_capita1 = (float)pib1 / populacao1;
+
+  float densidade2 = (float)populacao2 / area2;
+  float pib_per_capita2 = (float)pib2 / populacao2;
+
+  printf("\n=== RESULTADOS DO NÍVEL AVENTUREIRO ===\n");
+
+  printf("\nCarta 1 – %s\n", codigo1);
+  printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+  printf("PIB per capita: R$ %.2f\n", pib_per_capita1);
+
+  printf("\nCarta 2 – %s\n", codigo2);
+  printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+  printf("PIB per capita: R$ %.2f\n", pib_per_capita2);
 
   return 0;
 }
