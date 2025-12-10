@@ -2,14 +2,14 @@
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+// Objetivo: No nível novato você deve criar as cartas representando os países utilizando scanf para entrada de dados e printf para exibir as informações.
 
 //int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
+  // Área para definição das variáveis para armazenar as propriedades dos países
 
   // Área para entrada de dados
 
-  // Área para exibição dos dados da cidade
+  // Área para exibição dos dados do país
 
 //return 0;
 //} 
@@ -19,10 +19,10 @@
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+// Objetivo: No nível novato você deve criar as cartas representando os países utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
+  // Área para definição das variáveis para armazenar as propriedades dos países
   char codigo1[4], nome1[50];
   long int populacao1, pib1;
   float area1;
@@ -37,7 +37,7 @@ int main() {
   printf("=== CADASTRO DA PRIMEIRA CARTA ===\n");
   printf("Codigo da carta (ex: A01): ");
   scanf("%s", codigo1);
-  printf("Nome da cidade: ");
+  printf("Nome do País: ");
   scanf(" %[^\n]", nome1);
   printf("Populacao: ");
   scanf("%ld", &populacao1);
@@ -51,7 +51,7 @@ int main() {
   printf("\n=== CADASTRO DA SEGUNDA CARTA ===\n");
   printf("Codigo da carta (ex: B01): ");
   scanf("%s", codigo2);
-  printf("Nome da cidade: ");
+  printf("Nome do País: ");
   scanf(" %[^\n]", nome2);
   printf("Populacao: ");
   scanf("%ld", &populacao2);
@@ -66,14 +66,14 @@ int main() {
   printf("\n=== CARTAS CADASTRADAS ===\n");
 
   printf("\nCarta 1: %s\n", codigo1);
-  printf("Cidade: %s\n", nome1);
+  printf("País: %s\n", nome1);
   printf("Populacao: %ld habitantes\n", populacao1);
   printf("Area: %.2f km²\n", area1);
   printf("PIB: R$ %ld\n", pib1);
   printf("Pontos turisticos: %d\n", pontos1);
 
   printf("\nCarta 2: %s\n", codigo2);
-  printf("Cidade: %s\n", nome2);
+  printf("País: %s\n", nome2);
   printf("Populacao: %ld habitantes\n", populacao2);
   printf("Area: %.2f km²\n", area2);
   printf("PIB: R$ %ld\n", pib2);
