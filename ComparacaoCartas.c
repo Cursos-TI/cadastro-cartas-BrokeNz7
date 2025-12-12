@@ -21,9 +21,9 @@ int main() {
   float densidade1, densidade2;
   float pib_per_capita1, pib_per_capita2;
 
-  // =============================================
+  // ============================================
   // CADASTRO DAS CARTAS (reaproveitado)
-  // =============================================
+  // ============================================
   printf("=== CADASTRO DA PRIMEIRA CARTA ===\n");
   printf("Codigo da carta (ex: A01): ");
   scanf("%s", codigo1);
